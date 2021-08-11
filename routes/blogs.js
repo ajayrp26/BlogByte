@@ -19,11 +19,11 @@ router.get('/', catchAsync(async (req,res) => {
 }))
 
 
-router.post('/', isLoggedIn, catchAsync(blogs.createNew))
+router.post('/', isLoggedIn, validateBlog, catchAsync(blogs.createNew))
 
 router.get('/:id/edit', isLoggedIn, isAuthor, catchAsync(blogs.renderEdit))
 
-router.put('/:id', isLoggedIn, isAuthor, catchAsync(blogs.update))
+router.put('/:id', isLoggedIn, isAuthor, validateBlog, catchAsync(blogs.update))
 
 router.delete('/:id',  isLoggedIn, isAuthor, catchAsync(blogs.delete))
 
