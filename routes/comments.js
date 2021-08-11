@@ -4,7 +4,7 @@ const catchAsync = require('../utils/catchAsync');
 const ExpressError = require('../utils/expressError');
 const Comment = require('../models/comment');
 const Blog = require('../models/blog'); 
-const { isLoggedIn, isAuthor, validateUser, validateBlog, validateComment, isCommentAuthor } = require('../middleware');
+const { isLoggedIn, isAuthor, validateBlog, validateComment, isCommentAuthor } = require('../middleware');
 const { commentSchema } = require('../schemas.js');
 const comments = require('../controllers/comments');
 
