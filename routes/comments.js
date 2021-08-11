@@ -9,7 +9,7 @@ const { commentSchema } = require('../schemas.js');
 const comments = require('../controllers/comments');
 
 
-router.post('/', isLoggedIn, catchAsync(comments.create))
+router.post('/', isLoggedIn, validateComment, catchAsync(comments.create))
 
 router.delete('/:commentid', isLoggedIn, isCommentAuthor, catchAsync(comments.delete))
 
