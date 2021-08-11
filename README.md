@@ -21,3 +21,6 @@ Tools used:
 ![Create](https://user-images.githubusercontent.com/88790013/129076473-d1a75322-ead6-4c0a-8a8d-6220c649249c.PNG)
 
 ![Blogs](https://user-images.githubusercontent.com/88790013/129076486-ef99258f-666a-4b8f-b712-9ef0843a0b73.PNG)
+
+![View1](https://user-images.githubusercontent.com/88790013/129079938-70fd0d5d-7ec5-48ca-8b18-b410535d7a48.PNG)
+
