@@ -3,7 +3,7 @@ const router = express.Router({mergeParams: true});
 const catchAsync = require('../utils/catchAsync');
 const ExpressError = require('../utils/expressError');
 const Blog = require('../models/blog');
-const { isLoggedIn, isAuthor, validateUser, validateBlog, validateComment, isCommentAuthor } = require('../middleware');
+const { isLoggedIn, isAuthor, validateBlog, validateComment, isCommentAuthor } = require('../middleware');
 const { blogSchema } = require('../schemas.js');
 const blogs = require('../controllers/blogs');
 
