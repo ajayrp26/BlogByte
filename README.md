@@ -12,7 +12,7 @@ Tools used:
 - Express
 - MongoDB
 
-## SCreenshots
+## Screenshots
 
 ![Home](https://user-images.githubusercontent.com/88790013/129076362-797928be-64ed-4421-bd48-1b37bfc164bf.PNG)
 
