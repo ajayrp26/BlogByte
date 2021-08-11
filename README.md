@@ -4,7 +4,7 @@
 
 A multi-page website built using `HTML` and `CSS` and `Javascript` skills which includes different layouts, and styling. 
 Along with the webpage design considerations, I worked to appropriately structure the files, as well as use proper formatting & style. 
-`node.js` is used on the backend. `Mongoose` is used to store and manage data.
+`node.js` is used on the backend. `Mongoose` is used to store and manage data. Errors are handled on both client and server side.
 
 Tools used:
 
