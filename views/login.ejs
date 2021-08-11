@@ -1,0 +1,23 @@
+<% layout('layouts/boilerplate') %>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Login</h4>
+                    <form action="/login" method="POST" novalidate class="needs-validation">
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" type="text" id="username" placeholder="Username" name="username" autofocus required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" placeholder="Password" name="password" required>
+                        </div>
+                        <button class="btn btn-success btn-block">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

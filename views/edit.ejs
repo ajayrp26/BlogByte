@@ -1,0 +1,24 @@
+<% layout('layouts/boilerplate') %>
+<div class="form-outline">
+  <form action="/blogs/<%=blog._id%>?_method=PUT" method="post" novalidate class="needs-validation">
+    <div class="card mt-3">
+      <div class="card-body">
+        <h3 class="card-title">Edit blog</h5>
+        <div class="form-group">
+          <label for="blogtitle">Blog Title</label>
+          <input type="text" value="<%=blog.blogtitle %>" required name="blogtitle" class="form-control" id="blogtitle">
+        </div>
+        <div>
+          <label class="form-group" for="bt">Blog text</label>
+          <textarea class="form-control" name="blogtext" required id="bt" rows="4"><%=blog.blogtext %></textarea>
+        </div>
+        <div>
+          <button type="button" class="btn btn-success mt-3">Save</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+

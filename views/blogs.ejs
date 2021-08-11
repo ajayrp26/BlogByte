@@ -1,0 +1,30 @@
+<% layout('layouts/boilerplate') %>
+<div>
+
+    <% for (let blog of blogs.reverse()) { %>
+        
+        <div class="card mt-3">
+            <div class="card-body">
+                <h3 class="card-title">
+                    <a class="text-dark" href="/blogs/<%= blog.id %>"><%= blog.blogtitle %></a>
+                </h3>
+                <%= blog.blogtext %>
+                <br>
+                <br>
+                <h6>Submitted by <%= blog.author.username %> </h6>
+
+            </div>
+        </div>
+        
+    <% } %>
+    <%  if(currentUser)  {%>
+
+        <div class="float-right">
+            <a href="/blogs/new" class="btn btn-outline-primary btn-sm active" role="button" aria-pressed="true">New Blog</a>
+
+        </div>
+    
+    <% } %> 
+</div>
+
+
